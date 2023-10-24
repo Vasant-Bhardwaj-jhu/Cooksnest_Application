@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/myRecipes"
+        android:layout_width="376dp"
+        android:layout_height="569dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="2dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0dp"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/savedrecipes">
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addnewrecipe"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:baselineAlignBottom="false"
+        android:foregroundGravity="center"
+        android:onClick="toAddRecipe"
+        android:src="@android:drawable/ic_input_add"
+        android:textAlignment="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/viewusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/ProfilePic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/postedrecipes"
+        android:layout_width="191dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="My Posted Recipes"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/savedrecipes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfilePic" />
+
+    <TextView
+        android:id="@+id/savedrecipes"
+        android:layout_width="194dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="My Saved Recipes"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/postedrecipes"
+        app:layout_constraintTop_toBottomOf="@+id/ProfilePic" />
+
+    <ImageView
+        android:id="@+id/ProfilePic"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_square"
+        tools:layout_editor_absoluteX="14dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

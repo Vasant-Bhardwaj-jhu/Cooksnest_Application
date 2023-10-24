@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142002786379",
+    "project_id": "cooksnest-c462c",
+    "storage_bucket": "cooksnest-c462c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142002786379:android:08b0f08c46fc17ec697dce",
+        "android_client_info": {
+          "package_name": "com.example.cooksnest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142002786379-12ubukv42qu579255hjn6o0avqv3mj8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmteKSfHb58AEUuMCvhiKVHuP3EJWT_mU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142002786379-12ubukv42qu579255hjn6o0avqv3mj8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
